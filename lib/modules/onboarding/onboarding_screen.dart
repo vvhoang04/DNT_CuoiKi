@@ -17,19 +17,22 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   // Dữ liệu giả lập cho 3 màn hình Onboarding
   final List<Map<String, String>> _onboardingData = [
     {
-      "image": "assets/images/onboarding_1.png", 
+      "image": "assets/images/onboarding_1.png",
       "title": "Learn New Words",
-      "subtitle": "Master thousands of vocabulary words with interactive flashcards and fun exercises",
+      "subtitle":
+          "Master thousands of vocabulary words with interactive flashcards and fun exercises",
     },
     {
-      "image": "assets/images/onboarding_2.png", 
+      "image": "assets/images/onboarding_2.png",
       "title": "Practice Daily",
-      "subtitle": "Consistent practice is the key to success. Keep your streak alive!",
+      "subtitle":
+          "Consistent practice is the key to success. Keep your streak alive!",
     },
     {
       "image": "assets/images/onboarding_3.png",
       "title": "Master Grammar",
-      "subtitle": "Understand complex grammar rules with simple explanations and examples.",
+      "subtitle":
+          "Understand complex grammar rules with simple explanations and examples.",
     },
   ];
 
@@ -112,7 +115,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.onboardingPrimary, // Màu tím
                         elevation: 8,
-                        shadowColor: AppColors.onboardingPrimary.withOpacity(0.4),
+                        shadowColor: AppColors.onboardingPrimary.withOpacity(
+                          0.4,
+                        ),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
@@ -141,7 +146,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   // Hàm chuyển sang Home
   void _completeOnboarding() {
-    Navigator.pushReplacementNamed(context, AppRoutes.home);
+    Navigator.pushReplacementNamed(context, AppRoutes.login);
   }
 
   // Widget nội dung từng trang
@@ -157,16 +162,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         Expanded(
           flex: 3,
           child: Container(
-             padding: const EdgeInsets.all(20),
-             child: Image.asset(
-               image,
-               fit: BoxFit.contain,
-               errorBuilder: (context, error, stackTrace) => 
-                 const Icon(Icons.image, size: 100, color: Colors.grey),
-             ),
+            padding: const EdgeInsets.all(20),
+            child: Image.asset(
+              image,
+              fit: BoxFit.contain,
+              errorBuilder: (context, error, stackTrace) =>
+                  const Icon(Icons.image, size: 100, color: Colors.grey),
+            ),
           ),
         ),
-        
+
         // Text nội dung
         Expanded(
           flex: 2,

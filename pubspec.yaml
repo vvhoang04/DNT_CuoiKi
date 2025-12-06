@@ -34,6 +34,13 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  http: ^1.1.0  # Gọi API
+  flutter_dotenv: ^5.1.0  # Quản lý API keys
+  provider: ^6.1.1  # State management
+  shared_preferences: ^2.2.2  # Lưu trữ local
+  intl: ^0.19.0
+  google_generative_ai: ^0.4.0 # Kiểm tra phiên bản mới nhất
+  dash_chat_2: ^0.0.21         # Thư viện UI chat cực tốt
 
 dev_dependencies:
   flutter_test:
