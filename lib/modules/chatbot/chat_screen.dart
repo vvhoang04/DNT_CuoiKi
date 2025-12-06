@@ -109,7 +109,7 @@ class _ChatScreenState extends State<ChatScreen> {
     id: '2',
     firstName: 'Trợ lý AI',
     profileImage:
-        'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.png',
+        'https://play-lh.googleusercontent.com/CCpo9n3vNPKc8UUAnsprIK2hZI-TW7PxmcQ9qKpoKCXkY83tyJDk31W-fUM1sQ_hxwY1t_IamRGLOo9fZtH0',
   );
 
   List<ChatMessage> _messages = [];

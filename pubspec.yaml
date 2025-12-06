@@ -41,6 +41,7 @@ dependencies:
   intl: ^0.19.0
   google_generative_ai: ^0.4.0 # Kiểm tra phiên bản mới nhất
   dash_chat_2: ^0.0.21         # Thư viện UI chat cực tốt
+  html: ^0.15.4
 
 dev_dependencies:
   flutter_test:
