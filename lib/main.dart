@@ -35,7 +35,8 @@ class MyApp extends StatelessWidget {
       ),
 
       // ← THAY ĐỔI QUAN TRỌNG: Chạy Onboarding đầu tiên
-      initialRoute: AppRoutes.grammar, // Thay vì AppRoutes.login
+      // initialRoute: AppRoutes.grammar,
+      initialRoute: AppRoutes.home,
 
       routes: {
         AppRoutes.onboarding: (context) => const OnboardingScreen(),
