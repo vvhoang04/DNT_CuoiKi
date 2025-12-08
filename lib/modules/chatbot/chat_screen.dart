@@ -146,7 +146,7 @@ Tránh:
     // Khởi tạo model với system instruction
     _model = GenerativeModel(
       model: 'gemini-2.5-flash',
-      apiKey: 'AIzaSyBe3UFbmsnV7I759FMRBjiVPLnD2ysHZiE',
+      apiKey: 'AIzaSyD2sOU2dJVDWjsP2tmbXaSmkA6mow3A8wc',
       systemInstruction: Content.system(systemPrompt),
     );
 
