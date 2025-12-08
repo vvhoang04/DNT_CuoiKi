@@ -1,59 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'config/app_colors.dart';
-// import 'config/app_routes.dart';
-
-// // --- IMPORT CÁC MÀN HÌNH ---
-// // Nếu thiếu các dòng này, code sẽ báo lỗi "isn't defined"
-// import 'modules/auth/login_screen.dart';
-// import 'modules/auth/signup_screen.dart';
-// import 'modules/onboarding/onboarding_screen.dart';
-// import 'modules/home/home_screen.dart';
-// import 'modules/vocabulary/vocab_screen.dart';
-// import 'modules/grammar/grammar_screen.dart'; // <--- DÒNG BẠN ĐANG THIẾU
-// import 'package:english_learning_app/modules/listening/listening_screen.dart';
-// import 'package:english_learning_app/modules/speaking/speaking_screen.dart';
-// import 'package:english_learning_app/modules/reading/reading_screen.dart';
-// import 'package:english_learning_app/modules/writing/writing_screen.dart';
-
-// void main() {
-//   runApp(const MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'English Learning App',
-//       debugShowCheckedModeBanner: false,
-//       theme: ThemeData(
-//         primaryColor: AppColors.primary,
-//         scaffoldBackgroundColor: AppColors.background,
-//         fontFamily: 'Poppins',
-//         useMaterial3: true,
-//       ),
-//       initialRoute: AppRoutes.login,
-//       routes: {
-//         AppRoutes.onboarding: (context) => const OnboardingScreen(),
-
-//         // Các màn hình chính (Bỏ const nếu cần)
-//         AppRoutes.login: (context) => LoginScreen(),
-//         AppRoutes.signUp: (context) => SignUpScreen(),
-//         AppRoutes.home: (context) => const HomeScreen(),
-//         AppRoutes.vocabulary: (context) => const VocabScreen(),
-
-//         // --- SỬA Ở ĐÂY: Xóa 'const' và đảm bảo đã import file ở trên ---
-//         AppRoutes.grammar: (context) => GrammarScreen(),
-//         AppRoutes.listening: (context) => const ListeningScreen(),
-//         AppRoutes.speaking: (context) => const SpeakingScreen(),
-//         AppRoutes.reading: (context) => const ReadingScreen(),
-//         AppRoutes.writing: (context) => const WritingScreen(),
-//       },
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'config/app_colors.dart';
 import 'config/app_routes.dart';
@@ -91,7 +35,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // ← THAY ĐỔI QUAN TRỌNG: Chạy Onboarding đầu tiên
-      initialRoute: AppRoutes.home, // Thay vì AppRoutes.login
+      initialRoute: AppRoutes.grammar, // Thay vì AppRoutes.login
 
       routes: {
         AppRoutes.onboarding: (context) => const OnboardingScreen(),
@@ -99,7 +43,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.signUp: (context) => SignUpScreen(),
         AppRoutes.home: (context) => const HomeScreen(),
         AppRoutes.vocabulary: (context) => const VocabScreen(),
-        AppRoutes.grammar: (context) => GrammarScreen(),
+        AppRoutes.grammar: (context) => const GrammarTopicsScreen(),
         AppRoutes.listening: (context) => const ListeningScreen(),
         AppRoutes.speaking: (context) => const SpeakingScreen(),
         AppRoutes.reading: (context) => const ReadingScreen(),
