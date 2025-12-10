@@ -9,7 +9,7 @@ import 'modules/auth/signup_screen.dart';
 import 'modules/onboarding/onboarding_screen.dart';
 import 'modules/home/home_screen.dart';
 import 'modules/vocabulary/vocab_screen.dart';
-import 'modules/grammar/grammar_screen.dart';
+import 'modules/grammar/grammar_topics_screen.dart';
 import 'modules/listening/listening_screen.dart';
 import 'modules/speaking/speaking_screen.dart';
 import 'modules/reading/reading_screen.dart';
@@ -35,9 +35,9 @@ class MyApp extends StatelessWidget {
       ),
 
       // ← THAY ĐỔI QUAN TRỌNG: Chạy Onboarding đầu tiên
-      // initialRoute: AppRoutes.grammar,
-      initialRoute: AppRoutes.home,
+      initialRoute: AppRoutes.grammar,
 
+      // initialRoute: AppRoutes.home,
       routes: {
         AppRoutes.onboarding: (context) => const OnboardingScreen(),
         AppRoutes.login: (context) => LoginScreen(),
