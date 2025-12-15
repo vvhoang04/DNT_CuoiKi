@@ -1,45 +1,65 @@
-# Miscellaneous
 *.class
 *.log
 *.pyc
 *.swp
 .DS_Store
 .atom/
-.build/
-.buildlog/
 .history
 .svn/
-.swiftpm/
-migrate_working_dir/
 
-# IntelliJ related
+--- INTELLIJ / ANDROID STUDIO ---
+
 *.iml
 *.ipr
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+--- VS CODE ---
 
-# Flutter/Dart/Pub related
+.vscode/
+
+--- FLUTTER / DART / PUB (Quan trọng) ---
+
+Dùng **/ để tìm trong mọi thư mục con
+
 **/doc/api/
 **/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-/coverage/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/build/          # Chặn thư mục build ở mọi nơi
+**/coverage/
 
-# Symbolication related
-app.*.symbols
+--- ANDROID ---
 
-# Obfuscation related
-app.*.map.json
+**/android/.gradle/
+**/android/local.properties
+**/android/app/build/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+--- IOS ---
+
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Pods/
+**/ios/Podfile.lock
+
+--- NODE.JS / BACKEND (Quan trọng) ---
+
+**/node_modules/
+**/npm-debug.log
+**/yarn-error.log
+
+--- ENVIRONMENT VARIABLES (Bảo mật) ---
+
+**/.env
+**/serviceAccountKey.json
+**/google-services.json
+**/firebase_options.dart

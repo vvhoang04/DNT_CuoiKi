@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tên ứng dụng -->
+    <string name="app_name">English Learning App</string>
+    
+    <!-- App ID Facebook (Điền số giả để chạy được App trước) -->
+    <string name="facebook_app_id">123456789</string>
+    
+    <!-- Protocol Scheme (Bắt buộc phải có chữ 'fb' dính liền với số ID ở trên) -->
+    <string name="fb_login_protocol_scheme">fb123456789</string>
+    
+    <!-- Client Token (Điền mã giả để chạy được App trước) -->
+    <string name="facebook_client_token">abcdef123456</string>
+</resources>

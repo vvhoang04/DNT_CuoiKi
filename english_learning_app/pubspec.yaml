@@ -1,0 +1,41 @@
+name: english_learning_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- UI Icons ---
+  cupertino_icons: ^1.0.6
+
+  # --- Firebase & Authentication (Đã nâng cấp để sửa lỗi Pigeon) ---
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  google_sign_in: ^6.2.1
+  flutter_facebook_auth: ^7.1.1
+  url_launcher: ^6.2.5
+  
+  # --- Networking ---
+  http: ^1.2.2
+
+  # --- Chatbot & AI ---
+  dash_chat_2: ^0.0.21
+  google_generative_ai: ^0.4.6
+  flutter_markdown: ^0.7.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Assets (Ảnh)
+  assets:
+    - assets/images/
